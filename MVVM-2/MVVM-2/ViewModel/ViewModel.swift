@@ -10,7 +10,9 @@ import Foundation
 
 class ViewModel: TableViewViewModelType {
     
-    var profiles = [
+    private var selectedIndexPath: IndexPath? // хранит выбранную ячейку
+    
+    var profiles = [ // массив данных для отображения
         Profile(name: "Vasya", secondName: "Pupkin", age: 12),
         Profile(name: "Slavik", secondName: "Wads", age: 59),
         Profile(name: "Mark", secondName: "Kort", age: 42)
@@ -23,6 +25,16 @@ class ViewModel: TableViewViewModelType {
     func cellViewModel(forIndexPath indexPath: IndexPath) -> TableViewCellViewModelType? {
         let profile = profiles[indexPath.row]
         return TableViewCellViewModel(profile: profile)
+    }
+    
+    // передали выбранный профиль
+    func viewModelForSelectedRow() -> DetailViewModelType? {
+        guard let selectedIndexPath = selectedIndexPath else { return nil }
+        return DetailViewModel(profile: profiles[selectedIndexPath.row])
+    }
+    
+    func selectRow(atIndexPath indexPath: IndexPath) {
+        self.selectedIndexPath = indexPath
     }
     
 }

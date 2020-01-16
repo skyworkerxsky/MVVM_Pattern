@@ -40,4 +40,24 @@ class TableViewController: UITableViewController {
         return cell
     }
 
+    // переходим по выбранной ячейке
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        guard let viewModel = viewModel else { return } // проверяем модель
+        viewModel.selectRow(atIndexPath: indexPath) // получили IndexPath
+    
+        performSegue(withIdentifier: "detailSegue", sender: nil)
+    }
+    
+    // подготавливаем переход где генерируем viewModel и передаем его
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier, let viewModel = viewModel else { return }
+        
+        if identifier == "detailSegue" {
+            if let destinationVC = segue.destination as? DetailViewController {
+                destinationVC.viewModel = viewModel.viewModelForSelectedRow()
+            }
+        }
+    }
+    
 }
