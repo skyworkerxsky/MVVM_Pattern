@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C7BFADD23D06A130062A9C8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BFADC23D06A130062A9C8 /* ViewModel.swift */; };
 		7CA59C4223CF4198006C34C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA59C4123CF4198006C34C3 /* AppDelegate.swift */; };
 		7CA59C4423CF4198006C34C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA59C4323CF4198006C34C3 /* SceneDelegate.swift */; };
 		7CA59C4623CF4198006C34C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA59C4523CF4198006C34C3 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C7BFADC23D06A130062A9C8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7CA59C3E23CF4198006C34C3 /* MVVM-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA59C4123CF4198006C34C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA59C4323CF4198006C34C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				7CA59C4A23CF419A006C34C3 /* Assets.xcassets */,
 				7CA59C4C23CF419A006C34C3 /* LaunchScreen.storyboard */,
 				7CA59C4F23CF419A006C34C3 /* Info.plist */,
+				7C7BFADC23D06A130062A9C8 /* ViewModel.swift */,
 			);
 			path = "MVVM-1";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C7BFADD23D06A130062A9C8 /* ViewModel.swift in Sources */,
 				7CA59C4623CF4198006C34C3 /* ViewController.swift in Sources */,
 				7CA59C5623CF41B6006C34C3 /* Profile.swift in Sources */,
 				7CA59C4223CF4198006C34C3 /* AppDelegate.swift in Sources */,

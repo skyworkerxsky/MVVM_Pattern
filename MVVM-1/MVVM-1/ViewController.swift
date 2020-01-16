@@ -18,12 +18,12 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     
-    var profile: Profile? {
+    var viewModel: ViewModel! {
+        
         didSet {
-            guard let profile = profile else {return}
-            self.nameLabel.text = profile.name
-            self.secondNameLabel.text = profile.secondName
-            self.ageLabel.text = "\(profile.age)"
+            self.nameLabel.text = viewModel.name
+            self.secondNameLabel.text = viewModel.secondName
+            self.ageLabel.text = viewModel.age
         }
     }
     
@@ -31,8 +31,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        profile = Profile(name: "Vasya", secondName: "Pupkin", age: 42)
+
+        viewModel = ViewModel()
     }
 
 }
