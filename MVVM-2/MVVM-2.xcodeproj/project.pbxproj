@@ -76,6 +76,7 @@
 		7C7BFAE923D06F1B0062A9C8 /* MVVM-2 */ = {
 			isa = PBXGroup;
 			children = (
+				7C772DF823D108C90029CF4E /* Box.swift */,
 				7C7BFAEA23D06F1B0062A9C8 /* AppDelegate.swift */,
 				7C7BFAEC23D06F1B0062A9C8 /* SceneDelegate.swift */,
 				7C7BFAF023D06F1B0062A9C8 /* Main.storyboard */,
@@ -86,7 +87,6 @@
 				7C7BFB0523D0759F0062A9C8 /* View */,
 				7C7BFB0A23D07B420062A9C8 /* ViewModel */,
 				7C7BFB0B23D07B4B0062A9C8 /* Protocols */,
-				7C772DF823D108C90029CF4E /* Box.swift */,
 			);
 			path = "MVVM-2";
 			sourceTree = "<group>";
